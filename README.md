@@ -6,6 +6,7 @@ Agent skills for Claude Code and other coding agents. Each skill lives in its ow
 
 | Skill | What it does |
 |---|---|
+| [doc-draft](doc-draft/SKILL.md) | Plans and drafts Chinese technical documents. Settles audience, purpose, doc type, section skeleton, and style conventions first, and stops for confirmation before drafting from the user's material. Never invents status, numbers, owners, or decisions: anything unsupported becomes a to-confirm item. Hands the draft to doc-lint. The skill text is in Chinese. |
 | [doc-lint](doc-lint/SKILL.md) | Reviews and polishes Chinese technical documents. Fixes structure (conclusions first; cross-section moves are proposed before they are applied), trims redundancy, removes AI clichés and translationese, and rewrites note-style fragments into full sentences. Keeps technical meaning, identifiers, and the original modality, owners, and scope. Includes an optional reader test run by a fresh sub-agent. The skill text is in Chinese. |
 
 ## Install
